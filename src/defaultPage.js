@@ -11,7 +11,7 @@ let DefaultPage = class DefaultPage {
 DefaultPage = __decorate([
     core_1.Component({
         selector: "default-page",
-        template: "<div><router-outlet> </router-outlet></div>"
+        templateUrl: "src/defaultPage.html"
     })
 ], DefaultPage);
 exports.DefaultPage = DefaultPage;

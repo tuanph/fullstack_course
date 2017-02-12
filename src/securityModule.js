@@ -11,12 +11,14 @@ const forms_1 = require("@angular/forms");
 const defaultPage_1 = require("./defaultPage");
 const securityRoutes_1 = require("./securityRoutes");
 const categories_component_1 = require("./categories.component");
+const addNewCategory_component_1 = require("./addNewCategory.component");
+const editCategory_component_1 = require("./editCategory.component");
 let SecurityModule = class SecurityModule {
 };
 SecurityModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, securityRoutes_1.SecurityRoutes],
-        declarations: [defaultPage_1.DefaultPage, categories_component_1.Categories],
+        declarations: [defaultPage_1.DefaultPage, categories_component_1.Categories, addNewCategory_component_1.AddNewCategory, editCategory_component_1.EditCategory],
         bootstrap: [defaultPage_1.DefaultPage]
     })
 ], SecurityModule);
