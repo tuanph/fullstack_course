@@ -8,7 +8,7 @@
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\"",
     "lite": "lite-server",
     "tsc:w": "tsc -w",
-    "tsc":"tsc"
+    "tsc": "tsc"
   },
   "keywords": [
     "angular2",
