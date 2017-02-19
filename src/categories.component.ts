@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
+import routerConfig from "./routerConfig";
 @Component({
     templateUrl: "src/categories.html"
 })
@@ -9,6 +10,6 @@ export class Categories {
         this.route = route;
     }
     public OnEditCustomerClicked(id: string) {
-        this.route.navigate(["/editCategory", id]);
+        this.route.navigate([routerConfig.editCategory.name, { id: id }]);
     }
 };
