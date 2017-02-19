@@ -3,36 +3,22 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Image</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td><i class="fa fa-pencil-square-o" (click)="OnEditCustomerClicked('1')"> </i> </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td><i class="fa fa-pencil-square-o" (click)="OnEditCustomerClicked('2')"> </i> </td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td><i class="fa fa-pencil-square-o" (click)="OnEditCustomerClicked('3')"> </i> </td>
+            <tr *ngFor="let category of categories">
+                <td backGroundColor [color]="'blue'"> {{selectedCategoryName}}</td>
+                <td>{{category.description}}</td>
+                <td> <img alt="Category photo" src="/src/resources/images/{{category.img}}" style="max-height:150px;max-width: 150px "
+                    /> </td>
+                <td><i class="fa fa-pencil-square-o" (click)="onEditCategoryClicked(category.name)"> </i> </td>
             </tr>
         </tbody>
     </table>
-
+    <category-Summary (onCategoryNameChanged)="onCategoryNameChangedOnPearent($event)" [categoryName]=selectedCategoryName></category-Summary>
+    <label *ngIf="selectedCategoryName"> Category name is : {{selectedCategoryName}}</label>
 </div>
