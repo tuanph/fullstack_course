@@ -13,12 +13,13 @@ const securityRoutes_1 = require("./securityRoutes");
 const categories_component_1 = require("./categories.component");
 const addNewCategory_component_1 = require("./addNewCategory.component");
 const editCategory_component_1 = require("./editCategory.component");
+const backGroundColor_1 = require("./backGroundColor");
 let SecurityModule = class SecurityModule {
 };
 SecurityModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, securityRoutes_1.SecurityRoutes],
-        declarations: [defaultPage_1.DefaultPage, categories_component_1.Categories, addNewCategory_component_1.AddNewCategory, editCategory_component_1.EditCategory],
+        declarations: [defaultPage_1.DefaultPage, categories_component_1.Categories, addNewCategory_component_1.AddNewCategory, editCategory_component_1.EditCategory, backGroundColor_1.BackGroundColor],
         bootstrap: [defaultPage_1.DefaultPage]
     })
 ], SecurityModule);
