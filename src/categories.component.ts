@@ -7,12 +7,16 @@ import { CategoryService } from "./categoryService";
 })
 export class Categories {
     public route: Router;
-    private categories: Array<any>;
+    private categories: any;
     private selectedCategory: any;
     constructor(route: Router, categoryService: CategoryService) {
         this.route = route;
-        this.categories = categoryService.getCategories();
-        this.selectedCategory = this.categories[0];
+        let self = this;
+        categoryService.getCategories().subscribe((categories: Array<any>) => {
+            self.categories = categories;
+            self.selectedCategory = self.categories[0];
+        });
+
     }
     public OnEditCategoryClicked(category: any) {
         this.selectedCategory = category;

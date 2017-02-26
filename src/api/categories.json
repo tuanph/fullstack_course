@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Category11",
+        "description": "Description1",
+        "image": "ngoctrinh.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Category22",
+        "description": "Description2",
+        "image": "maria.jpg"
+    }
+]

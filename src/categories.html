@@ -1,25 +1,28 @@
-<div class="x_content">
+<page>
+    <page-header>
+        <h2>Categories </h2>
+    </page-header>
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Image</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let category of categories">
-                <td>{{category.id}}</td>
-                <td backgroundColor [myColor]="'red'">{{category.name}}</td>
-                <td>{{category.description}}</td>
-                <td><img style="max-height: 100px; max-width: 100px" src="/src/resources/images/{{category.image}}" alt="avatar">                    </td>
-                <td><i class="fa fa-pencil-square-o" (click)="OnEditCategoryClicked(category)"> </i> </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <category-Summary [(categoryName)]="selectedCategory.name"></category-Summary>
-
-</div>
+    <page-content>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let category of categories">
+                    <td>{{category.id}}</td>
+                    <td backgroundColor [myColor]="'red'">{{category.name}}</td>
+                    <td>{{category.description}}</td>
+                    <td><img style="max-height: 100px; max-width: 100px" src="/src/resources/images/{{category.image}}" alt="avatar">                        </td>
+                    <td><i class="fa fa-pencil-square-o" (click)="OnEditCategoryClicked(category)"> </i> </td>
+                </tr>
+            </tbody>
+        </table>
+        <category-Summary *ngIf="selectedCategory" [(categoryName)]="selectedCategory.name"></category-Summary>
+    </page-content>
+</page>
