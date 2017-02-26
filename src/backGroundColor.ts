@@ -1,17 +1,14 @@
-import { Directive, Input, ElementRef, AfterViewInit } from "@angular/core";
-
+import { Directive, Input, AfterViewInit, ElementRef } from "@angular/core";
 @Directive({
-    selector: "[backGroundColor]"
+    selector: "[backgroundColor]"
 })
-export class BackGroundColor implements AfterViewInit {
+export class BackGroundColor {
+    @Input() myColor: string;
     private el: ElementRef;
-    @Input() myColor: string = "blue";
     constructor(el: ElementRef) {
         this.el = el;
     }
-
     ngAfterViewInit() {
-        this.el.nativeElement.style.backgroundColor  = this.myColor;
-        console.log('color ne :'+ this.myColor);
+        this.el.nativeElement.style.backgroundColor = this.myColor;
     }
 }
