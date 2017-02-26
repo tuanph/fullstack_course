@@ -12,11 +12,14 @@ export class Categories {
     constructor(route: Router, categoryService: CategoryService) {
         this.route = route;
         let self = this;
-        categoryService.getCategories().subscribe((categories: Array<any>) => {
-            self.categories = categories;
-            self.selectedCategory = self.categories[0];
-        });
-
+        categoryService.getCategories()
+            .then((categories: Array<any>) => {
+                self.categories = categories;
+                self.selectedCategory = self.categories[0];
+            })
+            .error((error: any) => {
+                console.log(error);
+            });
     }
     public OnEditCategoryClicked(category: any) {
         this.selectedCategory = category;
