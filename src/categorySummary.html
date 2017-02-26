@@ -1,4 +1,4 @@
-<div class="x_panel" *ngIf="selectedCategoryName">
+<div class="x_panel" *ngIf="categoryName">
     <div class="x_title">
         <h2>Category Summary</h2>
         <div class="clearfix"></div>
@@ -6,16 +6,8 @@
     <div class="x_content">
         <br>
         <form id="editCategoryForm" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
-            <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="categoryName">Name <span class="required">*</span>
-                        </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <input (change)="onValueChanged()" [(ngModel)]="selectedCategoryName" type="text" name="categoryName" required="required"
-                        class="form-control col-md-7 col-xs-12">
-                </div>
-            </div>
-
+            <form-Input [label] = "'Name'" [value]="categoryName" (valueChange)="onValueChanged($event)" ></form-Input>
         </form>
-        <label> New Category name: {{selectedCategoryName}}</label>
+        <label> New Category name: {{categoryName}}</label>
     </div>
 </div>

@@ -17,7 +17,4 @@ export class Categories {
     public OnEditCategoryClicked(category: any) {
         this.selectedCategory = category;
     }
-    public onCategoryNameChanged(newCategoryName: string) {
-        this.selectedCategory.name = newCategoryName;
-    }
 };

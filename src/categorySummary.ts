@@ -4,9 +4,10 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
     templateUrl: "src/categorySummary.html"
 })
 export class CategorySummary {
-    @Input() selectedCategoryName: string;
-    @Output() onCategoryNameChanged: EventEmitter<string> = new EventEmitter<string>();
-    public onValueChanged() {
-        this.onCategoryNameChanged.emit(this.selectedCategoryName);
+    @Input() categoryName: string;
+    @Output() categoryNameChange: EventEmitter<string> = new EventEmitter<string>();
+    public onValueChanged(newValue: string) {
+        this.categoryName = newValue;
+        this.categoryNameChange.emit(this.categoryName);
     }
 }

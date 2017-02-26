@@ -20,6 +20,6 @@
         </tbody>
     </table>
 
-    <category-Summary (onCategoryNameChanged)="onCategoryNameChanged($event)" [selectedCategoryName]="selectedCategory.name"></category-Summary>
+    <category-Summary [(categoryName)]="selectedCategory.name"></category-Summary>
 
 </div>
