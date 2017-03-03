@@ -17,14 +17,16 @@ const categoryService_1 = require("./categoryService");
 const backGroundColor_1 = require("./backGroundColor");
 const categorySummary_1 = require("./categorySummary");
 const formInput_1 = require("./formInput");
+const page_1 = require("./page");
 let SecurityModule = class SecurityModule {
 };
 SecurityModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, securityRoutes_1.SecurityRoutes],
-        declarations: [defaultPage_1.DefaultPage, categories_component_1.Categories, addNewCategory_component_1.AddNewCategory, editCategory_component_1.EditCategory, backGroundColor_1.BackGroundColor, categorySummary_1.CategorySummary, formInput_1.FormInput],
+        declarations: [defaultPage_1.DefaultPage, categories_component_1.Categories, addNewCategory_component_1.AddNewCategory, editCategory_component_1.EditCategory, backGroundColor_1.BackGroundColor, categorySummary_1.CategorySummary, formInput_1.FormInput, page_1.Page],
         bootstrap: [defaultPage_1.DefaultPage],
-        providers: [categoryService_1.CategoryService]
+        providers: [categoryService_1.CategoryService],
+        schemas: [core_1.CUSTOM_ELEMENTS_SCHEMA, core_1.NO_ERRORS_SCHEMA]
     })
 ], SecurityModule);
 exports.SecurityModule = SecurityModule;
