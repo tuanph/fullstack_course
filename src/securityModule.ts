@@ -12,11 +12,12 @@ import { CategorySummary } from "./categorySummary";
 import { FormInput } from "./formInput";
 import { Page } from "./page";
 import { HttpModule } from "@angular/http";
+import { HttpConnector } from "./httpConnector";
 @NgModule({
     imports: [BrowserModule, FormsModule, SecurityRoutes, HttpModule],
     declarations: [DefaultPage, Categories, AddNewCategory, EditCategory, BackGroundColor, CategorySummary, FormInput, Page],
     bootstrap: [DefaultPage],
-    providers: [CategoryService],
+    providers: [CategoryService,HttpConnector],
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class SecurityModule { }
