@@ -1,0 +1,12 @@
+19/2/2017:
+-Binding one way
+-Attribute directive(using ElementRef)
+-Using a component as a directive
+-Binding 2 ways, @Input, @Output
+-Callback directive, using , (set the name of ()Input is XXX and the event of ()Output is XXXChange, using EventEmitter)
+
+26/2/2017:
+-Create page for the same template, using <ng-content select ="title"> ...
+-Create your Promise, just handle suscess and error function
+-Using Iconnector
+-Using @Injectable 
