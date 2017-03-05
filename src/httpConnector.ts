@@ -26,7 +26,6 @@ export class HttpConnector implements IConnector {
         return promise;
     }
     private handleResponse(response: Response) {
-        console.log('db' + response.json);
         return response.json();
     }
 
