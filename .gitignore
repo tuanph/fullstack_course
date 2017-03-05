@@ -1,3 +1,2 @@
-node_modules/
-src/*.js
-src/*.map
+api/WebApi/packages/
+api/WebApi/WebApi/bin/
