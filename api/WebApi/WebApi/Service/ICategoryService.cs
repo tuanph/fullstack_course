@@ -5,5 +5,6 @@
     public interface ICategoryService
     {
         IList<Category> GetCategories();
+        Category AddNewCategory(AddCategoryModel category);
     }
 }

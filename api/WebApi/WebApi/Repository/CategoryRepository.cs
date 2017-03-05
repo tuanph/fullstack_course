@@ -13,6 +13,12 @@
         {
             return this.Context.Categories.ToList();
         }
+        public Category AddNewCategory(Category category)
+        {
+            category = this.Context.Categories.Add(category);
+            this.Context.SaveChanges();
+            return category;
+        }
 
 
     }

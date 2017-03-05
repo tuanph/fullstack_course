@@ -5,5 +5,6 @@
     public interface ICategoryRepository
     {
         IList<Category> GetCategories();
+        Category AddNewCategory(Category category);
     }
 }

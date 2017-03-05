@@ -16,9 +16,12 @@
             ICategoryService service = new CategoryService();
             return service.GetCategories();
         }
+        [Route("")]
+        [HttpPost]
+        public Category AddNewCategory([FromBody] AddCategoryModel category)
+        {
+            ICategoryService service = new CategoryService();
+            return service.AddNewCategory(category);
+        }
     }
-
-    //[Serializable()]//User for send back Data with XML format
-    //[DataContract(Name = "category")]
-
 }

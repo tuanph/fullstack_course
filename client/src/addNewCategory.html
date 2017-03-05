@@ -1,4 +1,12 @@
 <page>
     <page-header>Add New Category</page-header>
-    <page-content>This is content of Add new Category Page</page-content>
+    <page-content>
+        <form id="addCategoryForm" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+            <form-Input [label]="'Name'" [(value)]="newCategory.name"></form-Input>
+            <form-Input [label]="'Description'" [(value)]="newCategory.description"></form-Input>
+            <form-Input [label]="'Image'" [(value)]="newCategory.image"></form-Input>
+            <form-Buttons [label]="'Submit'" (click)="onAddOrUpdateCategoryClicked()"></form-Buttons>
+        </form>
+    </page-content>
 </page>

@@ -13,11 +13,12 @@ import { FormInput } from "./formInput";
 import { Page } from "./page";
 import { HttpModule } from "@angular/http";
 import { HttpConnector } from "./httpConnector";
+import { FormButtons } from "./formButtons";
 @NgModule({
     imports: [BrowserModule, FormsModule, SecurityRoutes, HttpModule],
-    declarations: [DefaultPage, Categories, AddNewCategory, EditCategory, BackGroundColor, CategorySummary, FormInput, Page],
+    declarations: [DefaultPage, Categories, AddNewCategory, EditCategory, BackGroundColor, CategorySummary, FormInput, Page, FormButtons],
     bootstrap: [DefaultPage],
-    providers: [CategoryService,HttpConnector],
+    providers: [CategoryService, HttpConnector],
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class SecurityModule { }
