@@ -1,11 +1,11 @@
 import { IConnector } from "./iConnector";
 import { Http, Response } from "@angular/http";
-import { Promise, PromiseFactory  } from "./promise";
+import { Promise, PromiseFactory } from "./promise";
 import "rxjs/add/operator/map";
 import { Observable } from "rxjs/observable";
 import { Injectable } from "@angular/core";
-
-@Injectable() 
+import appConfig from "./appConfig";
+@Injectable()
 export class HttpConnector implements IConnector {
     private http: Http;
 
@@ -13,7 +13,9 @@ export class HttpConnector implements IConnector {
         this.http = http;
     }
     public get(url: string): Promise {
-        let promise = PromiseFactory .create();
+        let rootUrl = appConfig.rootApiUrl;
+        let promise = PromiseFactory.create();
+        url = rootUrl + url;
         this.http.get(url)
             .map(this.handleResponse)
             .subscribe(

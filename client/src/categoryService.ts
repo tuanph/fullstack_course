@@ -65,6 +65,6 @@ export class CategoryService {
         this.iConnector = iConnector;
     }
     public getCategories(): Promise {
-        return this.iConnector.get("src/api/categories.json");
+        return this.iConnector.get("/api/categories");
     }
 }

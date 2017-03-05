@@ -88,3 +88,6 @@ D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Http.Owin.
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\obj\Debug\WebApi.dll
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\obj\Debug\WebApi.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Cors.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Http.Cors.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Http.Cors.xml
