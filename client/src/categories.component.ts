@@ -9,9 +9,10 @@ import { BasePage } from "./basePage";
 export class Categories extends BasePage {
     private categories: any;
     private selectedCategory: any;
-    constructor(route: Router, categoryService: CategoryService) {
+    constructor(route: Router) {
         super(route);
         let self = this;
+        let categoryService = window.ioc.resolve("categoryService");
         categoryService.getCategories()
             .then((categories: Array<any>) => {
                 self.categories = categories;

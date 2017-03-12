@@ -23,7 +23,7 @@ import { FormPrimaryButton } from "./formPrimaryButton";
         HorizontalForm,FormPrimaryButton
     ],
     bootstrap: [DefaultPage],
-    providers: [CategoryService, HttpConnector],
+    // providers: [CategoryService, HttpConnector],
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class SecurityModule { }
