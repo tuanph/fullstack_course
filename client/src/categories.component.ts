@@ -2,15 +2,15 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import routerConfig from "./routerConfig";
 import { CategoryService } from "./categoryService";
+import { BasePage } from "./basePage";
 @Component({
     templateUrl: "src/categories.html"
 })
-export class Categories {
-    public route: Router;
+export class Categories extends BasePage {
     private categories: any;
     private selectedCategory: any;
     constructor(route: Router, categoryService: CategoryService) {
-        this.route = route;
+        super(route);
         let self = this;
         categoryService.getCategories()
             .then((categories: Array<any>) => {

@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
 @Component({
-    selector: "form-Input",
+    selector: "form-input",
     templateUrl: "src/formInput.html"
 })
 export class FormInput {

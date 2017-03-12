@@ -1,12 +1,12 @@
 <page>
     <page-header>Add New Category</page-header>
     <page-content>
-        <form id="addCategoryForm" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
-
-            <form-Input [label]="'Name'" [(value)]="newCategory.name"></form-Input>
-            <form-Input [label]="'Description'" [(value)]="newCategory.description"></form-Input>
-            <form-Input [label]="'Image'" [(value)]="newCategory.image"></form-Input>
-            <form-Buttons [label]="'Submit'" (click)="onAddOrUpdateCategoryClicked()"></form-Buttons>
-        </form>
+        <horizontal-form>
+            <form-input [label]="'Name'" [(value)]="newCategory.name"></form-input>
+            <form-input [label]="'Description'" [(value)]="newCategory.description"> </form-input>
+            <form-input [label]="'Image'" [(value)]="newCategory.image"></form-input>
+            <form-button [label]="'Cancel'" (click1)="onCancelClicked()"></form-button>
+            <form-primary-button [label]="'Submit'" (click1)="onAddOrUpdateCategoryClicked()"> </form-primary-button>
+        </horizontal-form>
     </page-content>
 </page>
