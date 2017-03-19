@@ -4,16 +4,18 @@ import { IConnector } from "./iConnector";
 import { HttpConnector } from "./httpConnector";
 import { AddOrUpdateCategoryModel } from "./addOrUpdateCategoryModel";
 
-@Injectable() //Must declare because CategoryService is an InjectAble and It use a injectable
+// @Injectable() //Must declare because CategoryService is an InjectAble and It use a injectable
 export class CategoryService {
-    private iConnector: IConnector;
-    constructor(iConnector: HttpConnector) {
-        this.iConnector = iConnector;
-    }
+    // private iConnector: IConnector;
+    // constructor(iConnector: HttpConnector) {
+    //     this.iConnector = iConnector;
+    // }
     public getCategories(): Promise {
-        return this.iConnector.get("/categories");
+        let iConnector = Window.ioc.resolve("iConnector");
+        return iConnector.get("/categories");
     }
     public addOrUpdateCategory(category: AddOrUpdateCategoryModel): Promise {
-        return this.iConnector.post("/categories", category);
+        let iConnector = Window.ioc.resolve("iConnector");
+        return iConnector.post("/categories", category);
     }
 }
