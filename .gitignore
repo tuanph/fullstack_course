@@ -1,2 +1,3 @@
 api/WebApi/packages/
 api/WebApi/WebApi/bin/
+*.map
