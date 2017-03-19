@@ -1,0 +1,14 @@
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\obj\Debug\WebApi.Repository.Impl.csprojResolveAssemblyReference.cache
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.Repository.Impl.dll.config
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.Repository.Impl.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.Repository.Impl.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\EntityFramework.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\EntityFramework.SqlServer.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.DbContext.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.Repository.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.DbContext.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\WebApi.Repository.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\EntityFramework.xml
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\bin\Debug\EntityFramework.SqlServer.xml
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\obj\Debug\WebApi.Repository.Impl.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Repository.Impl\obj\Debug\WebApi.Repository.Impl.pdb

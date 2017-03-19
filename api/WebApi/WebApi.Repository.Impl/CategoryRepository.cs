@@ -1,10 +1,10 @@
-﻿namespace WebApi.Repository
+﻿namespace WebApi.Repository.Impl
 {
-    using DbContext;
-    using System;
+    using WebApi.DbContext;
     using System.Collections.Generic;
     using System.Linq;
-    using WebApi.Models;
+    using WebApi.Repository;
+    using System;
 
     public class CategoryRepository : ICategoryRepository
     {
@@ -20,6 +20,9 @@
             return category;
         }
 
-
+        public Category GetCategoryByName(string name)
+        {
+            return this.Context.Categories.FirstOrDefault(category => category.Name == name);
+        }
     }
 }

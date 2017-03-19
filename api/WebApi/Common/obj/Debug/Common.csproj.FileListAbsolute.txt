@@ -1,0 +1,5 @@
+D:\Angular2\Projects\FullStackCourse\api\WebApi\Common\bin\Debug\Common.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\Common\bin\Debug\Common.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Angular2\Projects\FullStackCourse\api\WebApi\Common\obj\Debug\Common.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\Common\obj\Debug\Common.pdb

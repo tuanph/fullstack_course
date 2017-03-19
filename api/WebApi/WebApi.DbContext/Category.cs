@@ -1,4 +1,4 @@
-﻿namespace WebApi.Models
+﻿namespace WebApi.DbContext
 {
 
     //[Serializable()]//User for send back Data with XML format

@@ -1,0 +1,17 @@
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\obj\Debug\WebApi.Service.Impl.csprojResolveAssemblyReference.cache
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Service.Impl.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Service.Impl.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.DbContext.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Repository.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Repository.Impl.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Service.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\EntityFramework.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.DbContext.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Repository.Impl.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Repository.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\WebApi.Service.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\EntityFramework.xml
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\obj\Debug\WebApi.Service.Impl.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\obj\Debug\WebApi.Service.Impl.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\Common.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi.Service.Impl\bin\Debug\Common.pdb
