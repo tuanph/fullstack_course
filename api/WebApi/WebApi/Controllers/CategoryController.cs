@@ -5,8 +5,8 @@
     using Services;
     using System.Collections.Generic;
     using System.Web.Http;
+    using Models;
     using Common;
-    using Common.Exception;
 
     [RoutePrefix("api/categories")]
     public class CategoryController : ApiController
@@ -14,38 +14,21 @@
         //Remember install CROS
         [Route("")]
         [HttpGet]
-        public IResponseData<IList<Category>> GetCategories()
+        [ResponseWrapper]
+        public GetCategoriesResponse GetCategories()
         {
-            IResponseData<IList<Category>> response = new ResponseData<IList<Category>>();
             ICategoryService service = new CategoryService();
-            try
-            {
-                var items = service.GetCategories();
-                response.SetData(items);
-            }
-            catch (ValidationException ex)
-            {
-                response.SetErrors(ex.Errors);
-            }
-
-            return response;
+            GetCategoriesResponse respone = service.GetCategories();
+            return respone;
         }
+
         [Route("")]
         [HttpPost]
-        public IResponseData<Category> AddNewCategory([FromBody] AddCategoryModel category)
+        [ResponseWrapper]
+        public AddCategoryResponse AddNewCategory([FromBody] AddCategoryRequest category)
         {
-            IResponseData<Category> response = new ResponseData<Category>();
-            try
-            {
-                ICategoryService service = new CategoryService();
-                var newItem = service.AddNewCategory(category);
-                response.SetData(newItem);
-            }
-            catch (ValidationException ex)
-            {
-                response.SetErrors(ex.Errors);
-            }
-            return response;
+            ICategoryService service = new CategoryService();
+            return service.AddNewCategory(category);
         }
     }
 }

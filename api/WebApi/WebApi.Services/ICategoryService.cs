@@ -3,10 +3,11 @@
 
     using System.Collections.Generic;
     using MyDbContext;
+    using Common;
 
     public interface ICategoryService
     {
-        IList<Category> GetCategories();
-        Category AddNewCategory(AddCategoryModel category);
+        GetCategoriesResponse GetCategories();
+        AddCategoryResponse AddNewCategory(AddCategoryRequest category);
     }
 }

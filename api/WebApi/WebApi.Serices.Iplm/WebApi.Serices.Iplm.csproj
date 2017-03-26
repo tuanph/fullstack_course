@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{8a270499-2bd3-4090-afa5-7ed9ffcd6fa3}</Project>
+      <Project>{f9d3cbe3-223c-4ff8-adc4-ff4d2a2b108d}</Project>
       <Name>Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebApi.MyDbContext\WebApi.MyDbContext.csproj">

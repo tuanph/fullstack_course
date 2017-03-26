@@ -1,9 +1,11 @@
-﻿namespace WebApi.MyDbContext
+﻿using Common;
+
+namespace WebApi.MyDbContext
 {
 
     //[Serializable()]//User for send back Data with XML format
     //[DataContract(Name = "category")]
-    public class Category
+    public class Category:IEntity
     {
         public Category()
         {

@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using MyDbContext;
+    using Common;
 
     public interface ICategoryRepository
     {

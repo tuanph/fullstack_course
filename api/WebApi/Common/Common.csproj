@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A270499-2BD3-4090-AFA5-7ED9FFCD6FA3}</ProjectGuid>
+    <ProjectGuid>{F9D3CBE3-223C-4FF8-ADC4-FF4D2A2B108D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Common</RootNamespace>
@@ -41,11 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exception\ValidationException.cs" />
+    <Compile Include="IEntity.cs" />
     <Compile Include="IResponseData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResponseData.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

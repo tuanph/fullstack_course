@@ -44,6 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{F9D3CBE3-223C-4FF8-ADC4-FF4D2A2B108D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebApi.MyDbContext\WebApi.MyDbContext.csproj">
       <Project>{88A2589B-E4DB-4427-A261-910BDC9D0268}</Project>
       <Name>WebApi.MyDbContext</Name>

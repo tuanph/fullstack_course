@@ -1,6 +1,6 @@
 ﻿namespace WebApi.Services
 {
-    public class AddCategoryModel
+    public class AddCategoryRequest
     {
         public int Id { get; set; }
         public string Name { get; set; }

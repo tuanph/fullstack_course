@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C801650C-E287-4955-B044-4FCB06646249}</ProjectGuid>
+    <ProjectGuid>{88A2589B-E4DB-4427-A261-910BDC9D0268}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApi.Repositories.Impl</RootNamespace>
-    <AssemblyName>WebApi.Repositories.Impl</AssemblyName>
+    <RootNamespace>WebApi.MyDbContext</RootNamespace>
+    <AssemblyName>WebApi.MyDbContext</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -49,7 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryRepository.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="MyDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,14 +61,6 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{f9d3cbe3-223c-4ff8-adc4-ff4d2a2b108d}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebApi.MyDbContext\WebApi.MyDbContext.csproj">
-      <Project>{88a2589b-e4db-4427-a261-910bdc9d0268}</Project>
-      <Name>WebApi.MyDbContext</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebApi.Repositories\WebApi.Repositories.csproj">
-      <Project>{01a15ded-664e-4e0b-986f-bbe4554c0ec8}</Project>
-      <Name>WebApi.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

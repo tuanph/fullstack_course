@@ -6,10 +6,11 @@
     using WebApi.Repositories.Impl;
     using System;
     using Common.Exception;
+    using Common;
 
     public class CategoryService : ICategoryService
     {
-        public Category AddNewCategory(AddCategoryModel category)
+        public AddCategoryResponse AddNewCategory(AddCategoryRequest category)
         {
             this.ValidateCategoryModel(category);
             ICategoryRepository repo = new CategoryRepository();
@@ -19,10 +20,18 @@
                 Description = category.Description,
                 Image = category.Image
             };
-            return repo.AddNewCategory(newCategory);
+            Category returnCategory = repo.AddNewCategory(newCategory);
+            AddCategoryResponse response = new AddCategoryResponse
+            {
+                Id = returnCategory.Id,
+                Name = returnCategory.Name,
+                Description = returnCategory.Description,
+                Image = returnCategory.Image
+            };
+            return response;
         }
 
-        private void ValidateCategoryModel(AddCategoryModel category)
+        private void ValidateCategoryModel(AddCategoryRequest category)
         {
             ValidationException exception = new ValidationException();
             if (String.IsNullOrWhiteSpace(category.Name))
@@ -36,10 +45,15 @@
             exception.ThrowIfError();
         }
 
-        public IList<Category> GetCategories()
+        public GetCategoriesResponse GetCategories()
         {
             ICategoryRepository repo = new CategoryRepository();
-            return repo.GetCategories();
+            IList<Category> categories = repo.GetCategories();
+            GetCategoriesResponse response = new GetCategoriesResponse()
+            {
+                categories = categories
+            };
+            return response;
         }
     }
 }
