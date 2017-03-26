@@ -15,11 +15,11 @@
         [Route("")]
         [HttpGet]
         [ResponseWrapper]
-        public GetCategoriesResponse GetCategories()
+        public IList<Category> GetCategories()
         {
             ICategoryService service = new CategoryService();
             GetCategoriesResponse respone = service.GetCategories();
-            return respone;
+            return respone.categories;
         }
 
         [Route("")]

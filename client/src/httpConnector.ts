@@ -1,33 +1,29 @@
 import { IConnector } from "./iConnector";
 import { Http, Response } from "@angular/http";
 import { Promise, PromiseFactory } from "./promise";
-
+import appHelper from "./appHelper";
 import appConfig from "./appConfig";
+import "rxjs/add/operator/map";
 export class HttpConnector implements IConnector {
-    private http: Http;
+
     private rootUrl = appConfig.rootApiUrl;
-    // constructor(http: Http) {
-    //     this.http = http;
-    // }
     public get(url: string): Promise {
+        let http: Http = appHelper.injector.get(Http);
         let promise = PromiseFactory.create();
-        promise.resolve([{
-            id: 1, name: "name 1", img: "123.jpg"
-        }])
-        // url = this.rootUrl + url;
-        // this.http.get(url)
-        //     .map(this.handleResponse)
-        //     .subscribe(
-        //     (data: any) => {
-        //         promise.resolve(data);
-        //     },
-        //     (error: any) => {
-        //         promise.reject(error)
-        //     });
+        url = this.rootUrl + url;
+        http.get(url)
+            .map(this.handleResponse)
+            .subscribe(
+            (data: any) => {
+                promise.resolve(data);
+            },
+            (error: any) => {
+                promise.reject(error)
+            });
         return promise;
     }
     private handleResponse(response: Response) {
-        return response.json();
+        return response.json().data;
     }
 
     public post(url: string, item: any): Promise {
