@@ -1,7 +1,8 @@
-﻿namespace WebApi.Repository
+﻿namespace WebApi.Repositories
 {
     using System.Collections.Generic;
-    using WebApi.Models;
+    using MyDbContext;
+
     public interface ICategoryRepository
     {
         IList<Category> GetCategories();

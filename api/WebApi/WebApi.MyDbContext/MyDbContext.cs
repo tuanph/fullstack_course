@@ -1,7 +1,6 @@
-﻿namespace WebApi.DbContext
+﻿namespace WebApi.MyDbContext
 {
     using System.Data.Entity;
-    using WebApi.Models;
 
     public class MyDbContext : System.Data.Entity.DbContext
     {

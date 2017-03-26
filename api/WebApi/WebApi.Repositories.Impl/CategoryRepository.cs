@@ -1,10 +1,9 @@
-﻿namespace WebApi.Repository
+﻿namespace WebApi.Repositories.Impl
 {
-    using DbContext;
-    using System;
+    using WebApi.MyDbContext;
     using System.Collections.Generic;
     using System.Linq;
-    using WebApi.Models;
+    using WebApi.Repositories;
 
     public class CategoryRepository : ICategoryRepository
     {

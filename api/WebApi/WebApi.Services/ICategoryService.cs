@@ -1,7 +1,9 @@
-﻿namespace WebApi.Service
+﻿namespace WebApi.Services
 {
+
     using System.Collections.Generic;
-    using WebApi.Models;
+    using MyDbContext;
+
     public interface ICategoryService
     {
         IList<Category> GetCategories();
