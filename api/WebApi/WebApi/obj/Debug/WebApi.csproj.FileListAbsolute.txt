@@ -91,3 +91,15 @@ D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\obj\Debug\WebApi.pdb
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Cors.dll
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Http.Cors.dll
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\System.Web.Http.Cors.xml
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.MyDbContext.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Serices.Iplm.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Services.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Repositories.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Repositories.Impl.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.MyDbContext.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Serices.Iplm.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Services.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Repositories.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Repositories.Impl.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\Common.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\Common.pdb
