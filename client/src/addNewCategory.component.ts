@@ -18,11 +18,11 @@ export class AddNewCategory extends BasePage {
         console.log("App ready");
     }
     private onAddOrUpdateCategoryClicked() {
-        this.categoryService.addOrUpdateCategory(this.newCategory)
-            .then((data: any) => {
-                this.onCancelClicked();
-                alert("Add new Category sucessful!");
-            });
+        // this.categoryService.addOrUpdateCategory(this.newCategory)
+        //     .then((data: any) => {
+        //         this.onCancelClicked();
+        //         alert("Add new Category sucessful!");
+        //     });
     }
     private onCancelClicked() {
         this.newCategory = new AddOrUpdateCategoryModel();

@@ -3,7 +3,7 @@ import { Router } from "@angular/router";
 import routerConfig from "./routerConfig";
 import { ICategoryService } from "./icategoryService";
 import { BasePage } from "./basePage";
-import { IocNames } from "./enum";
+import { IocNames } from "./modules/common/index";
 @Component({
     templateUrl: "src/categories.html"
 })

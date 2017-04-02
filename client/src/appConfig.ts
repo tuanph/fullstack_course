@@ -1,6 +1,5 @@
 import { CategoryService } from "./categoryService";
-import { HttpConnector } from "./httpConnector";
-import { IocNames, IocLifeCycle } from "./enum";
+import { IocNames, IocLifeCycle, HttpConnector } from "./modules/common/index";
 let appConfig = {
     rootApiUrl: "http://localhost:7471/api/",
     ioc: [

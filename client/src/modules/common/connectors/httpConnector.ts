@@ -1,13 +1,13 @@
 import { IConnector } from "./iConnector";
 import { Http, Response } from "@angular/http";
-import { Promise, PromiseFactory } from "./promise";
-import appHelper from "./appHelper";
-import appConfig from "./appConfig";
+// import { Promise, PromiseFactory } from "./promise";
+import { Promise, PromiseFactory } from "../models/promise";
+import appHelper from "../helpers/appHelper";
 import "rxjs/add/operator/map";
 export class HttpConnector implements IConnector {
-    private rootUrl = appConfig.rootApiUrl;
+    private rootUrl = appHelper.config.rootApiUrl;
     public get(url: string): Promise {
-        let http: Http = appHelper.injector.get(Http);
+        let http: Http = window.ioc.resolve(Http);
         let promise = PromiseFactory.create();
         url = this.rootUrl + url;
         http.get(url)

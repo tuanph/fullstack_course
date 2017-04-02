@@ -11,3 +11,4 @@ api/WebApi/WebApi.MyDbContext/obj/
 api/WebApi/WebApi.Services/bin/
 api/WebApi/WebApi.MyDbContext/bin/
 api/WebApi/WebApi.Repositories.Impl/obj/
+src/*.js
