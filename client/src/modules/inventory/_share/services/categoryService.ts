@@ -1,7 +1,5 @@
-import { Promise, IConnector, IocNames } from "./modules/common/index";
-// import { IConnector } from "./iConnector";
-import { AddOrUpdateCategoryModel } from "./addOrUpdateCategoryModel";
-// import { IocNames } from "./enum";
+import { Promise, IConnector, IocNames } from "../../../../modules/common/index";
+import { AddOrUpdateCategoryModel } from "../../category/addOrUpdateCategoryModel";
 export class CategoryService {
     public getCategories(): Promise {
         let iConnector: IConnector = window.ioc.resolve(IocNames.IConnector);

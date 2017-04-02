@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { Categories } from "./categories.component";
-import { AddNewCategory } from "./addNewCategory.component";
-import { EditCategory } from "./editCategory.component";
+import { Categories } from "./category/categories.component";
+import { AddNewCategory } from "./category/addNewCategory.component";
+import { EditCategory } from "./category/editCategory.component";
 import routerConfig from "./routerConfig";
 let routes: Routes = [
     { path: "", redirectTo: routerConfig.categories.name, pathMatch: "full" },

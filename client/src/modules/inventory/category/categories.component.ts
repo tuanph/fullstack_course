@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
-import routerConfig from "./routerConfig";
-import { ICategoryService } from "./icategoryService";
-import { BasePage } from "./basePage";
-import { IocNames } from "./modules/common/index";
+import routerConfig from "../routerConfig";
+import { ICategoryService } from "../_share/services/icategoryService";
+import { BasePage } from "../../../modules/common/index";
+import { IocNames } from "../../../modules/common/index";
 @Component({
-    templateUrl: "src/categories.html"
+    templateUrl: "src/modules/inventory/category/categories.html"
 })
 export class Categories extends BasePage {
     private categories: any;

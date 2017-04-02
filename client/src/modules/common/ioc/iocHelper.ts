@@ -1,7 +1,7 @@
 import { PromiseFactory, Promise } from "../models/promise";
 import { IocFactory } from "./ioCFactory";
 // import appConfig from "./appConfig";
-import appConfig from "../../../appConfig";
+import appConfig from "../../../config/appConfig";
 let iocHelper = {
     configIoC: configIoC
 }

@@ -1,10 +1,10 @@
 import { Component } from "@angular/core";
 import { AddOrUpdateCategoryModel } from "./addOrUpdateCategoryModel";
-import { CategoryService } from "./categoryService";
-import { BasePage } from "./basePage";
+import { CategoryService } from "../_share/services/categoryService";
+import { BasePage } from "../../../modules/common/index";
 import { Router } from "@angular/router";
 @Component({
-    templateUrl: "src/addNewCategory.html"
+    templateUrl: "src/modules/inventory/category/addNewCategory.html"
 })
 export class AddNewCategory extends BasePage {
     private newCategory: AddOrUpdateCategoryModel = new AddOrUpdateCategoryModel();
