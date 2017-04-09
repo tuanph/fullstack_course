@@ -7,8 +7,10 @@ export * from "./models/basePage";
 
 import iocHelper from "./ioc/iocHelper";
 import appHelper from "./helpers/appHelper";
+import resourceHelper from "./helpers/resourceHelper";
 
 let helperFacade = new HelperFacade();
 helperFacade.iocHelper = iocHelper;
 helperFacade.appHelper = appHelper;
+helperFacade.resourceHelper = resourceHelper;
 export default helperFacade;

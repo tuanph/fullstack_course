@@ -1,6 +1,7 @@
 export const IocNames = {
     IConnector: "iConnector",
-    ICategoryService: "iCategoryService"
+    ICategoryService: "iCategoryService",
+    IResourceService: "iResourceService"
 };
 export enum IocLifeCycle {
     Singleton,

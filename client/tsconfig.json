@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app/common": ["src/modules/common/index"],
+      "@app/themes/default": [ "src/themes/default/defaultLayout"]
+    },
     "target": "es6",
     "module": "commonjs",
     "sourceMap": true,
