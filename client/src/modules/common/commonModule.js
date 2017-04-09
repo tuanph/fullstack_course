@@ -12,14 +12,14 @@ const formInput_1 = require("./components/formInput");
 const page_1 = require("./components/page");
 const formPrimaryButton_1 = require("./components/formPrimaryButton");
 const horizontalForm_1 = require("./components/horizontalForm");
-let CommonModule = class CommonModule {
+let AppCommonModule = class AppCommonModule {
 };
-CommonModule = __decorate([
+AppCommonModule = __decorate([
     core_1.NgModule({
         imports: [forms_1.FormsModule],
         declarations: [formButton_1.FormButton, formInput_1.FormInput, page_1.Page, formPrimaryButton_1.FormPrimaryButton, horizontalForm_1.HorizontalForm],
         exports: [formButton_1.FormButton, formInput_1.FormInput]
     })
-], CommonModule);
-exports.CommonModule = CommonModule;
+], AppCommonModule);
+exports.AppCommonModule = AppCommonModule;
 //# sourceMappingURL=commonModule.js.map

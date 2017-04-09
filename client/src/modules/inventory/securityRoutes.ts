@@ -11,7 +11,7 @@ let routes: Routes = [
     { path: routerConfig.editCategory.name, component: EditCategory }
 ];
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
 export class SecurityRoutes {

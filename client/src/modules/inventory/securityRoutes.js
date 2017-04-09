@@ -21,7 +21,7 @@ let SecurityRoutes = class SecurityRoutes {
 };
 SecurityRoutes = __decorate([
     core_1.NgModule({
-        imports: [router_1.RouterModule.forRoot(routes)],
+        imports: [router_1.RouterModule.forChild(routes)],
         exports: [router_1.RouterModule]
     })
 ], SecurityRoutes);

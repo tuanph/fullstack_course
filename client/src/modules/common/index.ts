@@ -8,9 +8,11 @@ export * from "./models/basePage";
 import iocHelper from "./ioc/iocHelper";
 import appHelper from "./helpers/appHelper";
 import resourceHelper from "./helpers/resourceHelper";
+import routerHelper from "./helpers/routerHelper";
 
 let helperFacade = new HelperFacade();
 helperFacade.iocHelper = iocHelper;
 helperFacade.appHelper = appHelper;
 helperFacade.resourceHelper = resourceHelper;
+helperFacade.routerHelper = routerHelper;
 export default helperFacade;

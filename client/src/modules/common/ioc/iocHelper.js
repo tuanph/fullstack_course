@@ -2,16 +2,16 @@
 const promise_1 = require("../models/promise");
 const ioCFactory_1 = require("./ioCFactory");
 // import appConfig from "./appConfig";
-const appConfig_1 = require("../../../config/appConfig");
+// import appConfig from "../../../config/appConfig";appConfig.ioc
 let iocHelper = {
     configIoC: configIoC
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = iocHelper;
-function configIoC() {
+function configIoC(appConfig) {
     let promise = promise_1.PromiseFactory.create();
     window.ioc = ioCFactory_1.IocFactory.create();
-    window.ioc.import(appConfig_1.default.ioc);
+    window.ioc.import(appConfig.ioc);
     promise.resolve({});
     return promise;
 }

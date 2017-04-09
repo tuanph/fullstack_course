@@ -3,6 +3,7 @@ const categoryService_1 = require("../modules/inventory/_share/services/category
 const common_1 = require("@app/common");
 const default_1 = require("@app/themes/default");
 let appConfig = {
+    modules: ["inventory"],
     rootApiUrl: "http://localhost:7471/api/",
     layout: default_1.DefaultLayout,
     ioc: [
@@ -12,4 +13,4 @@ let appConfig = {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = appConfig;
-//# sourceMappingURL=appConfig.js.map
+//# sourceMappingURL=appconfig.js.map

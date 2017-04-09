@@ -10,5 +10,5 @@ import { HorizontalForm } from "./components/horizontalForm";
     declarations: [FormButton, FormInput, Page, FormPrimaryButton, HorizontalForm],
     exports: [FormButton, FormInput]
 })
-export class CommonModule {
+export class AppCommonModule {
 }

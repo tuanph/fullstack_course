@@ -10,10 +10,12 @@ __export(require("./models/basePage"));
 const iocHelper_1 = require("./ioc/iocHelper");
 const appHelper_1 = require("./helpers/appHelper");
 const resourceHelper_1 = require("./helpers/resourceHelper");
+const routerHelper_1 = require("./helpers/routerHelper");
 let helperFacade = new helperFacade_1.HelperFacade();
 helperFacade.iocHelper = iocHelper_1.default;
 helperFacade.appHelper = appHelper_1.default;
 helperFacade.resourceHelper = resourceHelper_1.default;
+helperFacade.routerHelper = routerHelper_1.default;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = helperFacade;
 //# sourceMappingURL=index.js.map

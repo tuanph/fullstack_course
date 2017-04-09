@@ -1,8 +1,8 @@
 /// <reference path="extension.d.ts" />
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-import { SecurityModule } from "./modules/inventory/securityModule";
+import { AppModule } from "./appModule";
 import helperFacade from "./modules/common/index";
-
-helperFacade.iocHelper.configIoC().then(() => {
-    platformBrowserDynamic().bootstrapModule(SecurityModule);
+import appConfig from "./config/appConfig";
+helperFacade.iocHelper.configIoC(appConfig).then(() => {
+    platformBrowserDynamic().bootstrapModule(AppModule);
 });

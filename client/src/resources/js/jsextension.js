@@ -224,6 +224,15 @@ String.removeFirst = function (str, text) {
     return str.substring(index, str.length);
 }
 
+String.toPascal = function (str) {
+    if (String.isNullOrWhiteSpace(str))
+        return String.empty;
+    return str.toPascal();
+};
+
+String.prototype.toPascal = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+};
 String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 };
@@ -401,7 +410,7 @@ Date.prototype.format = function (mask, utc) {
                 return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
             });
         };
-    } ();
+    }();
 
     // Some common format strings
     dateFormat.masks = {
