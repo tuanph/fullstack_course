@@ -8,6 +8,7 @@ __export(require("./ioc/enum"));
 __export(require("./connectors/httpConnector"));
 __export(require("./models/promise"));
 __export(require("./models/basePage"));
+__export(require("./enum"));
 const iocHelper_1 = require("./ioc/iocHelper");
 const appHelper_1 = require("./helpers/appHelper");
 const resourceHelper_1 = require("./helpers/resourceHelper");

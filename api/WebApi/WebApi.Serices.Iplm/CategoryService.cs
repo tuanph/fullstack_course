@@ -3,17 +3,17 @@
     using MyDbContext;
     using System.Collections.Generic;
     using WebApi.Repositories;
-    using WebApi.Repositories.Impl;
     using System;
     using Common.Exception;
-    using Common;
+    using Common.IoC;
 
     public class CategoryService : ICategoryService
     {
         public AddCategoryResponse AddNewCategory(AddCategoryRequest category)
         {
             this.ValidateCategoryModel(category);
-            ICategoryRepository repo = new CategoryRepository();
+            //ICategoryRepository repo = new CategoryRepository();
+            ICategoryRepository repo = IoCContainer.Resolve<ICategoryRepository>();
             Category newCategory = new Category
             {
                 Name = category.Name,
@@ -30,7 +30,6 @@
             };
             return response;
         }
-
         private void ValidateCategoryModel(AddCategoryRequest category)
         {
             ValidationException exception = new ValidationException();
@@ -44,10 +43,10 @@
             }
             exception.ThrowIfError();
         }
-
         public GetCategoriesResponse GetCategories()
         {
-            ICategoryRepository repo = new CategoryRepository();
+            //ICategoryRepository repo = new CategoryRepository();
+            ICategoryRepository repo = IoCContainer.Resolve<ICategoryRepository>();
             IList<Category> categories = repo.GetCategories();
             GetCategoriesResponse response = new GetCategoriesResponse()
             {

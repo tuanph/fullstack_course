@@ -103,3 +103,7 @@ D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Repositories.p
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\WebApi.Repositories.Impl.pdb
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\obj\Debug\WebApi.dll
 D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\obj\Debug\WebApi.pdb
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\Castle.Core.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\Castle.Windsor.dll
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\Castle.Core.xml
+D:\Angular2\Projects\FullStackCourse\api\WebApi\WebApi\bin\Castle.Windsor.xml

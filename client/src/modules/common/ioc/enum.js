@@ -10,7 +10,4 @@ var IocLifeCycle;
     IocLifeCycle[IocLifeCycle["Singleton"] = 0] = "Singleton";
     IocLifeCycle[IocLifeCycle["Transient"] = 1] = "Transient";
 })(IocLifeCycle = exports.IocLifeCycle || (exports.IocLifeCycle = {}));
-exports.ModulesNames = {
-    Inventory: "inventory"
-};
 //# sourceMappingURL=enum.js.map

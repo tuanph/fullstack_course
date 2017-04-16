@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Services", "WebApi.Services\WebApi.Services.csproj", "{3517279F-0ED1-4592-9D18-3989C93EB0E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Serices.Iplm", "WebApi.Serices.Iplm\WebApi.Serices.Iplm.csproj", "{F8532C28-1FB6-412D-AA53-1022437D045E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Services.Iplm", "WebApi.Serices.Iplm\WebApi.Services.Iplm.csproj", "{F8532C28-1FB6-412D-AA53-1022437D045E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Repositories", "WebApi.Repositories\WebApi.Repositories.csproj", "{01A15DED-664E-4E0B-986F-BBE4554C0EC8}"
 EndProject

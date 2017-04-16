@@ -7,6 +7,7 @@
     using System.Web.Http;
     using Models;
     using Common;
+    using Common.IoC;
 
     [RoutePrefix("api/categories")]
     public class CategoryController : ApiController
@@ -17,7 +18,7 @@
         [ResponseWrapper]
         public IList<Category> GetCategories()
         {
-            ICategoryService service = new CategoryService();
+            ICategoryService service = IoCContainer.Resolve<ICategoryService>();
             GetCategoriesResponse respone = service.GetCategories();
             return respone.categories;
         }
@@ -27,7 +28,7 @@
         [ResponseWrapper]
         public AddCategoryResponse AddNewCategory([FromBody] AddCategoryRequest category)
         {
-            ICategoryService service = new CategoryService();
+            ICategoryService service = IoCContainer.Resolve<ICategoryService>();
             return service.AddNewCategory(category);
         }
     }

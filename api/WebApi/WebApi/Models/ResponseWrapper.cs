@@ -13,9 +13,11 @@
             if (actionExecutedContext.Exception == null)
             {
                 var actionResponse = (System.Net.Http.ObjectContent)actionExecutedContext.Response.Content;
-                response.SetData(actionResponse.Value);
+                if (actionExecutedContext.Response.StatusCode != System.Net.HttpStatusCode.NoContent)
+                {
+                    response.SetData(actionResponse.Value);
+                }
                 actionExecutedContext.Response = actionExecutedContext.Request.CreateResponse(System.Net.HttpStatusCode.OK, response);
-
             }
             if (actionExecutedContext.Exception != null && actionExecutedContext.Exception is ValidationException)
             {
