@@ -1,8 +1,8 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let urlHelper = {
     resolveModule: resolveModule
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = urlHelper;
 function resolveModule(name) {
     // return "./src/modules/" + name + "/" + name + "Module" + String.toPascal(name) + "Module";

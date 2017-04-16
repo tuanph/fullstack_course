@@ -1,9 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const urlHelper_1 = require("./urlHelper");
 let routeHelper = {
     getModuleRoute: getModuleRoute
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = routeHelper;
 function getModuleRoute(modules) {
     let routes = [];

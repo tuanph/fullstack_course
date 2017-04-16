@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const promise_1 = require("../models/promise");
 const ioCFactory_1 = require("./ioCFactory");
 // import appConfig from "./appConfig";
@@ -6,7 +7,6 @@ const ioCFactory_1 = require("./ioCFactory");
 let iocHelper = {
     configIoC: configIoC
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = iocHelper;
 function configIoC(appConfig) {
     let promise = promise_1.PromiseFactory.create();

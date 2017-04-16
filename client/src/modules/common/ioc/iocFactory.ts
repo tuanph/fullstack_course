@@ -14,6 +14,13 @@ export class IocContainer {
         this.registrations = []
 
     }
+    public register(registrations: Array<any>) {
+        if (registrations == null || registrations.length == 0) { return };
+        let self = this;
+        registrations.forEach((item: any) => {
+            self.registrations.push(item);
+        });
+    }
     public import(registrations: Array<any>) {
         this.registrations = registrations;
     }

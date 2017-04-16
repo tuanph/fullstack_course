@@ -8,6 +8,9 @@ import { BackGroundColor } from "../common/components/backGroundColor";
 import { CategorySummary } from "./_share/components/categorySummary";
 import { AppCommonModule } from "../../modules/common/commonModule";
 import { SecurityRoutes } from "./securityRoutes";
+import { IocNames, IocLifeCycle } from "@app/common";
+
+
 @NgModule({
     imports: [CommonModule, AppCommonModule, SecurityRoutes],
     declarations: [Categories, AddNewCategory, EditCategory,
@@ -16,5 +19,10 @@ import { SecurityRoutes } from "./securityRoutes";
     schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class InventoryModule {
+    constructor() {
+        window.ioc.register([
+            { name: IocNames.ICategoryService, instance: CategoryService, lifeCycle: IocLifeCycle.Singleton }
+        ]);
 
+    }
 }

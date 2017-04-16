@@ -7,3 +7,6 @@ export enum IocLifeCycle {
     Singleton,
     Transient
 }
+export const ModulesNames = {
+    Inventory: "inventory"
+}

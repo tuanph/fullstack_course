@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const http_1 = require("@angular/http");
 // import { Promise, PromiseFactory } from "./promise";
 const promise_1 = require("../models/promise");

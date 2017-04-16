@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const enum_1 = require("./enum");
 const transientObjectBulder_1 = require("./builder/transientObjectBulder");
 const singletonObjectBulder_1 = require("./builder/singletonObjectBulder");
@@ -12,6 +13,16 @@ exports.IocFactory = IocFactory;
 class IocContainer {
     constructor() {
         this.registrations = [];
+    }
+    register(registrations) {
+        if (registrations == null || registrations.length == 0) {
+            return;
+        }
+        ;
+        let self = this;
+        registrations.forEach((item) => {
+            self.registrations.push(item);
+        });
     }
     import(registrations) {
         this.registrations = registrations;

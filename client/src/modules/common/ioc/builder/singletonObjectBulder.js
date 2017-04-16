@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class SingletonObjectBulder {
     constructor(obj) {
         this.obj = obj;

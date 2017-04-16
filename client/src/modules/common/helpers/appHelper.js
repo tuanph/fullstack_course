@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class AppHelper {
     constructor() {
         this.injector = null;
@@ -12,6 +13,5 @@ class AppHelper {
     }
 }
 let appHelper = new AppHelper();
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = appHelper;
 //# sourceMappingURL=appHelper.js.map
