@@ -50,6 +50,9 @@
   <ItemGroup>
     <Compile Include="Exception\ValidationException.cs" />
     <Compile Include="IEntity.cs" />
+    <Compile Include="IoC\Castle\Bootstrap.cs" />
+    <Compile Include="IoC\Castle\CastleContainer.cs" />
+    <Compile Include="IoC\IContainer.cs" />
     <Compile Include="IoC\IoCContainer.cs" />
     <Compile Include="IResponseData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +61,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

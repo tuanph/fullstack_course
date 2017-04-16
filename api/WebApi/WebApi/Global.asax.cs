@@ -19,6 +19,7 @@ namespace WebApi
             var formatters = GlobalConfiguration.Configuration.Formatters;
             var jsonFormatter = formatters.JsonFormatter;
             var settings = jsonFormatter.SerializerSettings;
+            Common.IoC.Castle.Bootstrap.Init();
             WebApi.Services.Impl.Bootstrap.registerIoC();
             WebApi.Repositories.Impl.Bootstrap.registerIoC();
         }

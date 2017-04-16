@@ -1,26 +1,22 @@
 ﻿namespace Common.IoC
 {
-    using Castle.MicroKernel.Registration;
-    using Castle.Windsor;
     public class IoCContainer
     {
-        private static IWindsorContainer Container;
-        static IoCContainer()
+        private static IContainer Container;
+      
+        public static void SetContainer(IContainer Container)
         {
-            IoCContainer.Container = new WindsorContainer();
+            IoCContainer.Container = Container;
         }
         public static IInstance Resolve<IInstance>() where IInstance : class
         {
             return IoCContainer.Container.Resolve<IInstance>();
         }
-
         public static void Register<IInstance, Instance>()
             where Instance : IInstance
             where IInstance : class
         {
-            IoCContainer.Container.Register(Component.For<IInstance>()
-                .ImplementedBy<Instance>()
-                .LifestyleSingleton());
+            IoCContainer.Container.Register<IInstance, Instance>();
         }
     }
 }
