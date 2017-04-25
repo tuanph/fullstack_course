@@ -1,13 +1,11 @@
 ﻿namespace WebApi.Controllers
 {
     using MyDbContext;
-    using Services.Impl;
     using Services;
     using System.Collections.Generic;
     using System.Web.Http;
     using Models;
-    using Common;
-    using Common.IoC;
+    using global::Common.IoC;
 
     [RoutePrefix("api/categories")]
     public class CategoryController : ApiController

@@ -1,11 +1,12 @@
 ﻿namespace WebApi.Services.Impl
 {
-    using Common.IoC;
+
+    using global::Common.IoC;
     using Services;
 
-    public class Bootstrap
+    public class Bootstrap : IBootstrap
     {
-        public static void registerIoC()
+        public void Execute()
         {
             IoCContainer.Register<ICategoryService, CategoryService>();
         }

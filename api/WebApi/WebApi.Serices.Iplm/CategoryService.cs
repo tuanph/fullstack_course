@@ -4,8 +4,8 @@
     using System.Collections.Generic;
     using WebApi.Repositories;
     using System;
-    using Common.Exception;
-    using Common.IoC;
+    using global::Common.IoC;
+    using global::Common.Exception;
 
     public class CategoryService : ICategoryService
     {

@@ -1,12 +1,25 @@
-﻿using System.Web.Http;
-using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.Routing;
-
-namespace WebApi
+﻿namespace WebApi
 {
+    using Common.App;
+    using System.Web.Http;
+    using System.Web.Mvc;
+    using System.Web.Optimization;
+    using System.Web.Routing;
     public class WebApiApplication : System.Web.HttpApplication
     {
+        IApplication app;
+        public WebApiApplication()
+        {
+            this.app = new WebApi.Common.App.WebApiApplication();
+            this.Error += OnError;
+        }
+        protected void Application_Error()
+        {
+        }
+        private void OnError(object sender, System.EventArgs e)
+        {
+            this.app.OnError();
+        }
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -14,14 +27,7 @@ namespace WebApi
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            //Convert Properties to CambelCase when send back data to client.
-            var formatters = GlobalConfiguration.Configuration.Formatters;
-            var jsonFormatter = formatters.JsonFormatter;
-            var settings = jsonFormatter.SerializerSettings;
-            Common.IoC.Castle.Bootstrap.Init();
-            WebApi.Services.Impl.Bootstrap.registerIoC();
-            WebApi.Repositories.Impl.Bootstrap.registerIoC();
+            this.app.Start();
         }
     }
 }

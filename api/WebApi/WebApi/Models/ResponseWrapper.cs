@@ -1,7 +1,7 @@
 ﻿namespace WebApi.Models
 {
-    using Common;
-    using Common.Exception;
+    using global::Common;
+    using global::Common.Exception;
     using System.Net.Http;
     using System.Web.Http.Filters;
 

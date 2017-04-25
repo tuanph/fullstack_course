@@ -1,6 +1,7 @@
 ﻿namespace WebApi.Services
 {
-    using Common;
+    using global::Common;
+
     public class AddCategoryResponse : IEntity
     {
         public int Id { get; set; }

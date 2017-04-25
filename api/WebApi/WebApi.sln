@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Repositories.Impl", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.MyDbContext", "WebApi.MyDbContext\WebApi.MyDbContext.csproj", "{88A2589B-E4DB-4427-A261-910BDC9D0268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{F9D3CBE3-223C-4FF8-ADC4-FF4D2A2B108D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Common", "Common\WebApi.Common.csproj", "{F9D3CBE3-223C-4FF8-ADC4-FF4D2A2B108D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

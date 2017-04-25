@@ -1,10 +1,12 @@
 ﻿
 namespace WebApi.Repositories.Impl
 {
-    using Common.IoC;
-    public class Bootstrap
+    using System;
+    using global::Common.IoC;
+
+    public class Bootstrap : IBootstrap
     {
-        public static void registerIoC()
+        public void Execute()
         {
             IoCContainer.Register<ICategoryRepository, CategoryRepository>();
         }

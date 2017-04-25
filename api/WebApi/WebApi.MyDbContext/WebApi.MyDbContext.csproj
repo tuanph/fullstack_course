@@ -58,9 +58,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
+    <ProjectReference Include="..\Common\WebApi.Common.csproj">
       <Project>{f9d3cbe3-223c-4ff8-adc4-ff4d2a2b108d}</Project>
-      <Name>Common</Name>
+      <Name>WebApi.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

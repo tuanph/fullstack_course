@@ -1,8 +1,9 @@
 ﻿namespace Common.IoC.Castle
 {
-    public class Bootstrap
+    using WebApi.Common;
+    public class ConfigCastleTask : IOnApplicationStarted
     {
-        public static void Init()
+        public void Execute()
         {
             IoCContainer.SetContainer(new CastleContainer());
         }
